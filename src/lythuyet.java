@@ -6,4 +6,6 @@ public class lythuyet {
 
     // interface
 
+    // buổi 2 : collection
+
 }

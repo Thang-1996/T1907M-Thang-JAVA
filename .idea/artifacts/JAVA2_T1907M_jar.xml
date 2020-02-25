@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JAVA2-T1907M:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JAVA2_T1907M_jar</output-path>
+    <root id="archive" name="JAVA2-T1907M.jar">
+      <element id="module-output" name="JAVA2-T1907M" />
+    </root>
+  </artifact>
+</component>
