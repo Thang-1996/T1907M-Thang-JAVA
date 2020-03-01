@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="Lab1.Form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="190.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhap Thong Tin Sinh Vien">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="72.0" layoutY="67.0" prefHeight="31.0" prefWidth="475.0" promptText="Name" />
+      <TextField fx:id="txtAge" layoutX="72.0" layoutY="118.0" prefHeight="31.0" prefWidth="475.0" promptText="Age" />
+      <TextField fx:id="txtMark" layoutX="72.0" layoutY="169.0" prefHeight="31.0" prefWidth="475.0" promptText="Mark" />
+      <Button onAction="#submitStudent" layoutX="72.0" layoutY="220.0" mnemonicParsing="false" text="Submit" />
+   </children>
+</Pane>
