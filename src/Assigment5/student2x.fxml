@@ -23,8 +23,8 @@
             <Font name="System Italic" size="15.0" />
          </font>
       </TextField>
-      <Button onAction="#submit" layoutX="230.0" layoutY="155.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="154.0" text="Enter" textFill="#2fc421" />
-      <Text fill="#2be186" layoutX="217.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh Sách Sinh Viên" textAlignment="CENTER" wrappingWidth="179.6708984375" />
+      <Button onAction="#submit" layoutX="230.0" layoutY="155.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="154.0" text="Add Student" textFill="#2fc421" />
+      <Text fill="#2be186" layoutX="217.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Students List" textAlignment="CENTER" wrappingWidth="179.6708984375" />
       <TableView fx:id="table" layoutX="78.0" layoutY="230.0" prefHeight="151.0" prefWidth="459.0">
         <columns>
           <TableColumn fx:id="table_id" prefWidth="104.0" text="ID" />
