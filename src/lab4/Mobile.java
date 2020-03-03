@@ -1,8 +1,7 @@
-package lab2;
+package lab4;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Mobile<S,T,N> {
     private S brand;

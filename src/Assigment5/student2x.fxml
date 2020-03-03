@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:controller="Assigment5.Form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtName" alignment="TOP_LEFT" layoutX="110.0" layoutY="41.0" prefHeight="31.0" prefWidth="394.0" promptText="Name">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#1bbc2e" fontSmoothingType="LCD" layoutX="131.0" layoutY="30.0" stroke="#ff33c5" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập Thông Tin Sinh Viên" textAlignment="CENTER" wrappingWidth="338.6708984375" />
+      <TextField fx:id="txtAge" alignment="TOP_LEFT" layoutX="110.0" layoutY="79.0" prefHeight="31.0" prefWidth="394.0" promptText="Age">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtMark" alignment="TOP_LEFT" layoutX="110.0" layoutY="118.0" prefHeight="31.0" prefWidth="394.0" promptText="Mark">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Button onAction="#submit" layoutX="230.0" layoutY="155.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="154.0" text="Enter" textFill="#2fc421" />
+      <Text fill="#2be186" layoutX="217.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh Sách Sinh Viên" textAlignment="CENTER" wrappingWidth="179.6708984375" />
+      <TableView fx:id="table" layoutX="78.0" layoutY="230.0" prefHeight="151.0" prefWidth="459.0">
+        <columns>
+          <TableColumn fx:id="table_id" prefWidth="104.0" text="ID" />
+          <TableColumn fx:id="table_name" prefWidth="113.0" text="Name" />
+            <TableColumn fx:id="table_age" prefWidth="105.0" text="Age" />
+            <TableColumn fx:id="table_mark" prefWidth="136.0" text="Mark" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

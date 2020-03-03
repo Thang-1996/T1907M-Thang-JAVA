@@ -21,4 +21,20 @@ public class lythuyet {
     // if(nextDay.getDayofMonth() == 29){
     //  // năm nhuận
     // }
+    // buổi 4 : exception
+    // try-catch-finally
+    // cú pháp
+    // try {
+    //  // code có thể có ngoại lệ gây lỗi
+    // }catch{
+    //  // khối để bắt lỗi ngoại lệ
+    // từ khóa throw và throws
+    // throw để ném 1 ngoại lệ cụ thể nào đó vào vị trí muốn đặt để nếu có lỗi thì dừng chương trình đây là ngoại lệ chủ động
+    // throws thường đặt cạnh tên hàm hoặc khai báo phương thức
+    // thường dùng để muốn chủ động dừng chương trình đột ngột theo ý muốn
+    // File Handing
+    // làm việc với database JDBC API
+
+    // }
+
 }
