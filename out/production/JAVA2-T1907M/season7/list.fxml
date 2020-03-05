@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="season7.List" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="lsView" layoutX="33.0" layoutY="66.0" prefHeight="273.0" prefWidth="533.0" />
+      <Text layoutX="210.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sach sinh vien" wrappingWidth="308.6708984375" />
+      <Button onAction="#form" layoutX="519.0" layoutY="12.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="46.0" text="+" />
+   </children>
+</Pane>

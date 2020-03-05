@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane fx:controller="Lab1.Form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="season7.Form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="190.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhap Thong Tin Sinh Vien">
          <font>

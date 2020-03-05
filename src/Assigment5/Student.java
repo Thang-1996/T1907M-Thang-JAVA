@@ -44,4 +44,14 @@ public class Student {
     public void setMark(Integer mark) {
         this.mark = mark;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", mark=" + mark +
+                '}';
+    }
 }

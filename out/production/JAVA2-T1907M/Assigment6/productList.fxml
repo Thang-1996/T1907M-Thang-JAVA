@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assigment6.pdlist">
+   <children>
+      <ListView fx:id="lsview" layoutX="14.0" layoutY="38.0" prefHeight="325.0" prefWidth="439.0" />
+      <Button layoutX="459.0" layoutY="38.0" mnemonicParsing="false" onAction="#submitform" text="Thêm Sản Phẩm" />
+      <Button layoutX="459.0" layoutY="118.0" mnemonicParsing="false" onAction="#showcart" prefHeight="31.0" prefWidth="127.0" text="Hiện Giỏ Hàng" />
+      <Button layoutX="459.0" layoutY="80.0" mnemonicParsing="false" onAction="#addcart" prefHeight="31.0" prefWidth="127.0" text="Thêm Giỏ Hàng" />
+      <Text layoutX="73.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh Sách Sản Phẩm" textAlignment="CENTER" wrappingWidth="267.6708984375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+<!--      <ListView fx:id="lsview1" layoutX="45.0" layoutY="232.0" prefHeight="154.0" prefWidth="509.0" />-->
+   </children>
+</Pane>
