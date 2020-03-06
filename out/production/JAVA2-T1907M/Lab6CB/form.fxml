@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<Pane fx:controller="Lab6CB.Form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtName" layoutX="83.0" layoutY="51.0" prefHeight="31.0" prefWidth="448.0" promptText="name" />
+      <TextArea fx:id="txtDesc" layoutX="83.0" layoutY="100.0" prefHeight="67.0" prefWidth="448.0" promptText="des" />
+      <TextField fx:id="txtPrice" layoutX="83.0" layoutY="185.0" prefHeight="31.0" prefWidth="448.0" promptText="price" />
+      <TextField fx:id="txtAmount" layoutX="83.0" layoutY="228.0" prefHeight="31.0" prefWidth="448.0" promptText="amount" />
+      <Button onAction="#submit" layoutX="161.0" layoutY="288.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="293.0" text="Button" />
+   </children>
+</Pane>

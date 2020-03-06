@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="Lab6CB.CartController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="lsview1" layoutX="77.0" layoutY="60.0" prefHeight="316.0" prefWidth="391.0" />
+      <Button onAction="#backtolist" layoutX="488.0" layoutY="60.0" mnemonicParsing="false" text="back" />
+   </children>
+</Pane>
