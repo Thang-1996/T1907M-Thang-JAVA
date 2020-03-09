@@ -1,5 +1,6 @@
 package Assigment5;
 
+import Sesson8.Connector;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.*;
@@ -10,6 +11,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class Form{
     // tạo table view + column
@@ -25,7 +27,7 @@ public class Form{
     // tạo list lưu giữ liệu lấy từ database
     ObservableList<Student> oblist = FXCollections.observableArrayList();
 
-    public void submit() throws Exception {
+    public void submit(){
         // lấy thông tin nhập vào từ textfield
         String name = txtName.getText();
         Integer age;
@@ -33,30 +35,14 @@ public class Form{
         age = Integer.parseInt(txtAge.getText());
         mark = Integer.parseInt(txtMark.getText());
         try{
-            // step : Lấy  Driver
-            Class.forName("com.mysql.jdbc.Driver");
-//            // Step 3: Tạo URL database
-            String url = "jdbc:mysql://localhost:3306/T1907M"; // ở cuối là tên database
-            String username = "root";
-            String password = ""; // nếu dùng xampp để chuỗi trống
-//            // Step 4: kết nối với database
-            Connection conn = DriverManager.getConnection(url,username,password);
-            System.out.println("Kết nối mySQL thành công!");
-            // bước truy vấn dữ liệu trong database
-            Statement stm2 = conn.createStatement(); // tạo statement để thực hiện truy vấn insert
-            String sql_txt2 = "INSERT INTO students(name,age,mark) VALUES('"+name+"',"+age+","+mark+")"; // câu truy vấn insert values = các mục nhập từ textfield
-            stm2.executeUpdate(sql_txt2); // thực hiện insert
-            Statement stm = conn.createStatement(); // statement select
-            String sql_text = "SELECT * FROM students";// viết câu truy vấn sql lấy danh sách
-            ResultSet rs = stm.executeQuery(sql_text); // tạo biến result để execute câu sql vừa truy vấn
-                oblist.removeAll(oblist); // reset lại List khi lấy về từ database mỗi khi nhấn button
-            // sử dụng dữ liệu thông tin vừa lấy từ truy vấn ra
-            while(rs.next()){
-                // thêm vào list tạo ở trên
-                oblist.add(new Student(rs.getInt("id"), rs.getString("name"), rs.getInt("age"), rs.getInt("mark")));
-            }
+            StudentDataObject stdao = StudentDataObject.getInstance();
+            Student pd = new Student(name,age,mark);
+            stdao.create(pd);
+            ArrayList<Student> ls = stdao.list();
+            oblist.removeAll();
+            oblist.addAll(ls);
         }catch (Exception e){
-            throw new Exception("Error");
+            System.out.println(e.getMessage());
         }
         // set cell value
         table_id.setCellValueFactory(new PropertyValueFactory<Student,Integer>("id"));
@@ -64,7 +50,5 @@ public class Form{
         table_age.setCellValueFactory(new PropertyValueFactory<Student,Integer>("age"));
         table_mark.setCellValueFactory(new PropertyValueFactory<Student,Integer>("mark"));
         table.setItems(oblist);
-//        table.getItems().clear();
-//        table.getItems().addAll(oblist);
     }
 }

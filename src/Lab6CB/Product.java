@@ -15,6 +15,13 @@ public class Product {
         this.amount = amount;
     }
 
+    public Product(String name, String des, int price, int amount) {
+        this.name = name;
+        this.des = des;
+        this.price = price;
+        this.amount = amount;
+    }
+
     public int getId() {
         return id;
     }

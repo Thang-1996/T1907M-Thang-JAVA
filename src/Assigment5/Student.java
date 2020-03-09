@@ -12,6 +12,11 @@ public class Student {
         this.age = age;
         this.mark = mark;
     }
+    public Student(String name, Integer age, Integer mark) {
+        this.name = name;
+        this.age = age;
+        this.mark = mark;
+    }
 
     public int getId() {
         return id;
