@@ -35,6 +35,7 @@ public class Form{
         age = Integer.parseInt(txtAge.getText());
         mark = Integer.parseInt(txtMark.getText());
         try{
+            // sử dụng DAO patten để insert và in ra sinh viên khi ấn button
             StudentDataObject stdao = StudentDataObject.getInstance();
             Student pd = new Student(name,age,mark);
             stdao.create(pd);
