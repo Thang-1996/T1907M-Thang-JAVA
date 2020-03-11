@@ -7,23 +7,18 @@ public class Main {
         Runnable r1 = () -> {
 //                for (int i = 10; i > 0; i--) {
 //                    System.out.println(i);   // đếm ngược 10s
-            for (int i = 10; i>=0;i--) {
+            System.out.println("10:00");
+            for (int i = 9; i>=0;i--) {
                 for(int j=59;j>0;j--){
-                    if(i==10 && j<10){
-                        System.out.println(i+":"+"0"+j);
-                    }
-                    else if(i==10 && j>10){
-                        System.out.println(i+":"+j);
-                    }
-                    else if(j<=9) {
+                    if(j<=9) {
                         System.out.println("0"+i+":"+"0"+j);
                     }else{
                         System.out.println("0"+i+":"+j);
                     }
+                    try{
+                        Thread.sleep(1000);
+                    }catch (Exception e){}
                 }
-                try{
-                    Thread.sleep(100);
-                }catch (Exception e){}
             }
             System.out.println("Chúc Mừng Đã Đếm Xong");
         };
