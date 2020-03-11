@@ -36,5 +36,7 @@ public class lythuyet {
     // làm việc với database JDBC API
 
     // }
+    // process là 1 chương trình đang thực thi
+    // thread là 1 process con
 
 }
