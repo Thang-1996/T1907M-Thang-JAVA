@@ -1,7 +1,6 @@
-package Pratical;
+package PracticalJava2;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class ContactList {
         ArrayList<Contact> contacts = new ArrayList<>();
@@ -14,10 +13,9 @@ public class ContactList {
             }
         }
         public boolean findContact(String name){
-            for(int i=0;i<contacts.size();i++){
-                Contact contact = contacts.get(i);
-                if(contact.getName().equals(name)){
-                    System.out.println("Name: "+contact.getName()+"Company:"+contact.getCompany()+"Email: "+contact.getName()+"Phone:"+contact.getPhone());
+            for(Contact c : contacts){
+                if(c.getName().equals(name)){
+                    System.out.println("Name: "+c.getName()+"Company:"+c.getCompany()+"Email: "+c.getName()+"Phone:"+c.getPhone());
                     return true;
                 }
             }

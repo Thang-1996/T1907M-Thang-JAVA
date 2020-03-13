@@ -1,4 +1,4 @@
-package Pratical;
+package PracticalJava2;
 
 
 import java.util.Scanner;
@@ -45,5 +45,4 @@ public class Main {
             }
         }while (choice!=4);
     }
-
 }
